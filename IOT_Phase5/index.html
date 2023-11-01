@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Noise Pollution Monitoring</title>
+</head>
+<body>
+    <h1>Noise Pollution Monitoring</h1>
+    <table>
+        <tr>
+            <th>Sensor ID</th>
+            <th>Noise Level (dB)</th>
+        </tr>
+        {% for sensor, level in data.items() %}
+        <tr>
+            <td>{{ sensor }}</td>
+            <td>{{ level }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
